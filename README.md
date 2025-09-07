@@ -1,6 +1,6 @@
 # AI-Curiosity-Experiment
 
-AI Experiment project - Ian Lam, 6th Sep 2025
+##AI Experiment project - Ian Lam, 6th Sep 2025
 
 I am investigating the weakness of narrow AI. There are many weaknesses in current AI model, and I decided to investigate its ability to show human traits, specifically curiosity.
 
@@ -15,9 +15,8 @@ However, if the game's objective is to gather as the main goal, then AI agents w
 I decide to give AI a boardgame, where all rules are hidden. They can only learn about it with their own actions. This is a single player boardgame to prevent each AI agent's performance being affected by other agents.
 
 
-The boardgame settings:
-
-Public Rules:
+##The boardgame settings:
+###Public Rules:
 
 The game is on a board with 10 x 10 grid.
 
@@ -30,8 +29,7 @@ Each AI agent can move to its adjacent grid (vertical and horizontal, but not di
 There are hidden rules.
 
 AI agents must complete the game in 70 rounds.
-
-Hidden Rules:
+###Hidden Rules:
 
 The boxes are labelled 1 to 100, with 1 starting at bottom-left, counting from right to left on a row, then continues left to right on the above row.
 
