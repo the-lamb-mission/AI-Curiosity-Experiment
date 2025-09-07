@@ -11,5 +11,5 @@ A game that requires gathering information actively.
 
 However, if the game's objective is to gather as the main goal, then AI agents will attempt to gather information. Hence, the game should have scouting data as an option which is not necessarily a condition to win and see if these agents decide to actively search for it.
 I decide to give AI a boardgame, where all rules are hidden. They can only learn about it with their own actions. This is a single player boardgame to prevent each AI agent's performance being affected by other agents.
-<img width="468" height="410" alt="image" src="https://github.com/user-attachments/assets/c04cd88e-81f5-455f-9579-6fb2d52586d5" />
+
 
