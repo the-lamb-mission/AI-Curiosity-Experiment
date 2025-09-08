@@ -11,7 +11,7 @@ What game can measure curiosity?
 
 A game that requires gathering information actively.
 
-However, if the game's objective is to gather as the main goal, then AI agents will attempt to gather information. Hence, the game should have scouting data as an option which is not necessarily a condition to win and see if these agents decide to actively search for it.
+However, if the game's objective is to gather as the main goal, then AI agents do not gathers information out of curiosity, but rather motivated by achieving the objective. Hence, the game should have scouting data as an option which is not necessarily a condition to win and see if these agents decide to actively search for it.
 I decide to give AI a boardgame, where all rules are hidden. They can only learn about it with their own actions. This is a single player boardgame to prevent each AI agent's performance being affected by other agents.
 
 
@@ -19,29 +19,34 @@ I decide to give AI a boardgame, where all rules are hidden. They can only learn
 
 ### Public Rules:
 
-The game is on a board with 10 x 10 grid.
+1. The game is on a board with 10 x 10 grid.
 
-AI agent starts on the bottom-left of the board.
+2. AI agent starts on the bottom-left of the board.
 
-The win condition is to reach the top-right destination of the board.
+3. The win condition is to reach the top-right destination of the board.
 
-Each AI agent can move to its adjacent grid (vertical and horizontal, but not diagonal) by one grid or ask a question about the rules (the game master will answer yes or no).
+4. Each AI agent can move to its adjacent grid (vertical and horizontal, but not diagonal) by one grid or ask a question about the rules (the game master will answer yes or no).
 
-There are hidden rules.
+5. There are hidden rules.
 
-AI agents must complete the game in 70 rounds.
+6. AI agents must complete the game in 70 rounds, or else the game ends.
 
-The least rounds used, the better it is.
+7. The least rounds used, the better it is.
 
 ### Hidden Rules:
 
-The boxes are labelled 0 to 99, with 0 starting at bottom-left, counting in ascending order from left to right on a row until its end, then move up to next row (also left to right).
+1. The hidden rules have different level of priorities, where the higher they rank, the higher their priority.
 
-If agent step on any odd prime number, the agent moves down by a row if possible.
+2. The boxes are labelled 0 to 99, with 0 starting at bottom-left, counting in ascending order from left to right on a row until its end, then move up to next row (also left to right).
 
-If agent step on any multiple of 11, the destination moves to left by one if possible and broadcast to the agent.
+3. If agent steps on any odd prime number, the agent moves down by a row if possible.
 
-If agent step on any 
+4. If agent steps on any multiple of 11, the destination moves to left by one if possible and broadcast to the agent.
+
+5. If agent was initially placed on a multiple of 6, and if they attempt to move up, it will not be permitted and their round would be wasted.
+
+6. If agent steps on any multiple of 4 (except 4), they will be moved to the last multiple of 4, for example, when they step on 32, they will move to 28.
+
 
 
 ## Method for Measuring Curiosity
