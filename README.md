@@ -35,7 +35,7 @@ I decide to give AI a boardgame, where all rules are hidden. They can only learn
 
 ### Hidden Rules:
 
-1. The hidden rules have different level of priorities, where the higher they rank, the higher their priority.
+1. The hidden rules have different level of priorities, where they are done in the order they are ranked.
 
 2. The boxes are labelled 0 to 99, with 0 starting at bottom-left, counting in ascending order from left to right on a row until its end, then move up to next row (also left to right).
 
