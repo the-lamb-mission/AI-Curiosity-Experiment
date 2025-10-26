@@ -66,3 +66,22 @@ This is a quantitative measurement that shows the degree of curiosity an agent i
 
 This is a qualitative assessment that shows how competent different AI agents are at collecting data. By using Observation 3 with Observation 1, we could conclude whether competence in data collection would impact the efficiency of AI agents reaching their destinations (similar to linking Observation 2 with Observation 1). Observation 3 can make a better judgement than observation 2 in some cases, such as when the AI agents have already fully grasped all hidden rules in a single question, then Observation 2 no longer correlates to the degree of curiosity an agent is at.
 
+## Results
+
+### Observation 1 - The Total Rounds Needed
+
+#### Grok
+#### ChatGPT
+#### DeepSeek
+
+### Observation 2 - The Percentages of Questioning Rounds
+
+#### Grok
+#### ChatGPT
+#### DeepSeek
+
+### Observation 3 - The Reflections
+
+#### Grok
+#### ChatGPT
+#### DeepSeek
