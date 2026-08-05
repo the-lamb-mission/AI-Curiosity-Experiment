@@ -2,7 +2,7 @@
 
 ## AI Experiment project, revisited - Ian Lam, 5, Aug 2026
 
-I am revisiting this project and tweaking details. [Detailed page linked here.]()
+I am revisiting this project and tweaking details. [Detailed page linked here.](Info-2026.md)
 
 ## AI Experiment project - Ian Lam, 6th Sep 2025
 
