@@ -1,5 +1,9 @@
 # AI-Curiosity-Experiment
 
+## AI Experiment project, revisited - Ian Lam, 5, Aug 2026
+
+I am revisiting this project and tweaking details. [Detailed page linked here.]()
+
 ## AI Experiment project - Ian Lam, 6th Sep 2025
 
 I am investigating the weakness of narrow AI. There are many weaknesses in current AI model, and I decided to investigate its ability to show human traits, specifically curiosity.
