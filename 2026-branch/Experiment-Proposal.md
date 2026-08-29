@@ -3,7 +3,9 @@ Do public LLM models show curiosity?
 
 Hypothesis: LLM models has a high degree of curiosity.
 
+ 
 ## Chapter 1 - Analysis
+
 ### Defining Curiosity
 Curiosity is "an eager wish to know or learn about something" (Cambridge Dictionary, 2026). This means the motivation is not from to pursue a goal, but rather to make one's understanding complete, or to learn something unnecessary.
 
@@ -36,8 +38,15 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
    - However, using a test may be biased to the questions. A qualitative measurement should still be considered to reduce bias.
 2. Models may not understand the objective of the simulation clearly.
    - This could cause confusion for AI, causing it to act unpredictably. A clear instruction is required for the AI.
-
+ 
+ 
+ 
 ## Chapter 2 - Design
+
+### Top Down Design Diagram:
+Priority is shown by the colour key, where the darker it is, the higher the priority.
+
+
 
 ## Chapter 3 - Development
 
