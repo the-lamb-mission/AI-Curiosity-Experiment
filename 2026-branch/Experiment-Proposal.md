@@ -31,7 +31,11 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
 5. AI shows motivation for completing or ignoring side quest.
 
 ### Limitations
-1. The experiment data 
+1. The experiment data is qualitative, as motivation for side quest cannot be measured with clear statistics.
+   - This can possibly be overcome by using a test. This test would consist of questions regarding the side quest.
+   - However, using a test may be biased to the questions. A qualitative measurement should still be considered to reduce bias.
+2. Models may not understand the objective of the simulation clearly.
+   - This could cause confusion for AI, causing it to act unpredictably. A clear instruction is required for the AI.
 
 ## Chapter 2 - Design
 
