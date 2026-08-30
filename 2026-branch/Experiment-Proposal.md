@@ -44,7 +44,8 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
 ## Chapter 2 - Design
 
 ### Top Down Design Diagram:
-Priority is shown by the colour key, where the darker it is, the higher the priority.
+![TD Diagram](gallery/Proposal%20-%20TD%20Diagram.png)
+This diagram is shows a breakdown of what must be done to build the experiment. 
 
 
 
