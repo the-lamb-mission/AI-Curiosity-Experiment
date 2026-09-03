@@ -41,15 +41,29 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
  
  
  
-## Chapter 2 - Design
+## Chapter 2 - Design and Develop (Cycle 1)
 
 ### Top Down Design Diagram:
 ![TD Diagram](gallery/Proposal%20-%20TD%20Diagram.png)
 This diagram is shows a breakdown of what must be done to build the experiment. 
 
+### Simulation Board
+I am using a grid system, as it is easily implemented with a 2D diagram. Also, grid allow calculations to be performed easily, e.g. calculating distances between entities, or checking collisions. These are functions possibly needed in the future.
+
+Each grid will store a Grid object. This is implemented with OOP, where a class Grid is made.
+Attributes it should have:
+- Its position (x, y) on the grid system.
+- List of entities it contains (the entities standing on it).
+- List of items it contains (the items placed on it).
+
+Functions it should have:
+- A getter method for its position.
+- A getter method and a setter method for the list of entities.
+- A getter method and a setter method for the list of items.
 
 
-## Chapter 3 - Development
+
+## Chapter 3 - Design and Develop (Cycle 1)
 
 ## Chapter 4 - Data Result
 
