@@ -40,7 +40,7 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
    - This could cause confusion for AI, causing it to act unpredictably. A clear instruction is required for the AI.
  
  
- 
+
 ## Chapter 2 - Design and Develop (Cycle 1)
 
 ### Top Down Design Diagram:
@@ -51,15 +51,32 @@ This diagram is shows a breakdown of what must be done to build the experiment.
 I am using a grid system, as it is easily implemented with a 2D diagram. Also, grid allow calculations to be performed easily, e.g. calculating distances between entities, or checking collisions. These are functions possibly needed in the future.
 
 Each grid will store a Grid object. This is implemented with OOP, where a class Grid is made.
-Attributes it should have:
+
+#### Grid Class:
+Attribute(s):
 - Its position (x, y) on the grid system.
 - List of entities it contains (the entities standing on it).
 - List of items it contains (the items placed on it).
 
-Functions it should have:
+Function(s):
 - A getter method for its position.
 - A getter method and a setter method for the list of entities.
 - A getter method and a setter method for the list of items.
+
+Next, I will create an abstract class for entities, such that a contract between different entities is enforced. This also makes it easier for me to design the interaction between the grid system and the entities.
+
+#### Entity Class:
+Attribute(s):
+- Its ID.
+- Health.
+- Its position (x, y) on the grid system.
+
+Function(s):
+- Movement - How it moves per round.
+- Attack - How it attacks.
+- FindDistance - Gets another Entity and find the distance between them.
+
+There is two main type of distance calculation, Manhattan distance and Euclidean distance. Manhattan distance would be used as it suits more for grid system, where it is equivalent to number of grids needed to be traversed for two entities to meet.
 
 
 
