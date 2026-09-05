@@ -47,6 +47,9 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
 ![TD Diagram](gallery/Proposal%20-%20TD%20Diagram.png)
 This diagram is shows a breakdown of what must be done to build the experiment. 
 
+### Describing the Simulation
+The simulation will be ran on a simulation board. The simulation will be round-based, which is simple to design, as it does not require a constant connection. Each round the entity can do one action, e.g. moving, or interacting with items and other entity on the board. **The goal for AI agents is to reach a certain item.**
+
 ### Simulation Board
 I am using a grid system, as it is easily implemented with a 2D diagram. Also, grid allow calculations to be performed easily, e.g. calculating distances between entities, or checking collisions. These are functions possibly needed in the future.
 
@@ -55,6 +58,7 @@ Each grid will store a Grid object. This is implemented with OOP, where a class 
 #### Grid Class:
 Attribute(s):
 - Its position (x, y) on the grid system.
+- Type, as grid may have different type, wall, water, land...
 - List of entities it contains (the entities standing on it).
 - List of items it contains (the items placed on it).
 
@@ -77,6 +81,24 @@ Function(s):
 - FindDistance - Gets another Entity and find the distance between them.
 
 There is two main type of distance calculation, Manhattan distance and Euclidean distance. Manhattan distance would be used as it suits more for grid system, where it is equivalent to number of grids needed to be traversed for two entities to meet.
+
+### Display System
+I am writing the display system in Python, as I am experienced in it. PyGame is a good library for the display system, as it can has built-in Sprite, which allows designing entities and grids easily.
+
+#### Displaying Board:
+The board is displayed in layers. All grids and entities will have their own sprite. Grids near the agents will be rendered.
+
+Change to Grid Class' attribute (s):
++ Sprite Object - describes how the grid should be displayed.
+
+Change to Grid Class' function (s):
++ render - render the grid onto the screen.
+
+Change to Entity Class' attribute (s):
++ Sprite Object - describes how the entity should be displayed.
+
+Change to Entity Class' function (s):
++ render - render the entity onto the screen.
 
 
 
