@@ -3,7 +3,7 @@ Do public LLM models show curiosity?
 
 Hypothesis: LLM models has a high degree of curiosity.
 
- 
+<br/><br/> 
 ## Chapter 1 - Analysis
 
 ### Defining Curiosity
@@ -40,8 +40,8 @@ We need to think of a way to separate the "question" (Measurement for curiosity)
    - This could cause confusion for AI, causing it to act unpredictably. A clear instruction is required for the AI.
  
  
-
-## Chapter 2 - Design and Develop (Cycle 1)
+<br/><br/>
+## Chapter 2 - Design (Cycle 1)
 
 ### Top Down Design Diagram:
 ![TD Diagram](gallery/Proposal%20-%20TD%20Diagram.png)
@@ -100,12 +100,23 @@ Change to Entity Class' attribute (s):
 Change to Entity Class' function (s):
 + render - render the entity onto the screen.
 
+#### Display Start Sequence:
+1. Create a window.
+2. Create a Canvas (PyGame Surface object).
+3. Repeat rendering the grid system by:
+4. Request all entities to finish their actions.
+5. Update Grid System after all entities' actions.
+6. Repeat until an end condition is satisfied (Either AI agent reached its goal or stopped by human moderator).
+
+<br/><br/>
+## Chapter 2.5 - Develop (Cycle 1)
 
 
-## Chapter 3 - Design and Develop (Cycle 1)
-
+<br/><br/>
+## Chapter 3 - Design (Cycle 2)
+<br/><br/>
 ## Chapter 4 - Data Result
-
+<br/><br/>
 ## Chapter 5 - Data Analysis
-
+<br/><br/>
 ## Chapter 6 - Conclusion
